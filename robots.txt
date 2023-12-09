@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://lesterbotello.github.io/al-folio/sitemap.xml
+Sitemap: https://lesterbotello.github.io//sitemap.xml
