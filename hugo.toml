@@ -1,4 +1,143 @@
-baseURL = 'https://lesterbotello.dev/'
-languageCode = 'en-us'
-title = 'lesterbotello.dev'
-theme = 'hugo-PaperMod'
+baseURL = "https://lesterbotello.dev/"
+languageCode = "en-us"
+title = "lesterbotello.dev"
+theme = "hugo-PaperMod"
+pagination.pagerSize = 5
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[params]
+  env = "production" # to enable google analytics, opengraph, twitter-cards and schema.
+  title = "lesterbotello.dev"
+  description = "Lester Botello's Blog"
+  author = "Lester Botello"
+  # author: ["Me", "You"] # multiple authors
+
+  images = ["/assets/images/profile-1.jpg"]
+  DateFormat = "January 2, 2006"
+  defaultTheme = "auto" # dark, light
+  disableThemeToggle = false
+
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+
+  [params.assets]
+    # disableHLJS = true # to disable highlight.js
+    # disableFingerprinting = true
+    favicon = "/assets/images/favicon/favicon.ico"
+    favicon16x16 = "/assets/images/favicon/favicon-16x16.png"
+    favicon32x32 = "/assets/images/favicon/favicon-32x32.png"
+    apple_touch_icon = "/assets/images/favicon/apple-touch-icon.png"
+
+  [params.label]
+    text = "Home"
+    icon = "/apple-touch-icon.png"
+    iconHeight = 35
+
+  # profile-mode
+  [params.profileMode]
+    enabled = false # needs to be explicitly set
+    title = "Lester Botello"
+    subtitle = "Software Engineer, .NET and AI enthusiast"
+    imageUrl = "/assets/images/profile-1.jpg"
+    imageWidth = 120
+    imageHeight = 120
+    imageTitle = "my image"
+    buttons = [
+        { name = "Posts", url = "/posts" },
+        { name = "About", url = "/about" }
+    ]
+
+  # home-info mode
+  [params.homeInfoParams]
+    Title = "Hi there 👋"
+    Content = "Welcome to my blog. I write about cross-platform development, AI, and everything in-between."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/lesterbotello/"
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/lesterbotello/"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/lesterbotello/"
+
+  # [params.analytics.google]
+  #   SiteVerificationTag = "XYZ..."
+  # [params.analytics.bing]
+  #   SiteVerificationTag = "XYZ..."
+  # [params.analytics.yandex]
+  #   SiteVerificationTag = "XYZ..."
+
+  [params.cover]
+    hidden = true # hide everywhere but not in structured data
+    hiddenInList = true # hide on list pages and home
+    hiddenInSingle = true # hide on single page
+
+  [params.editPost]
+    URL = "https://github.com/lesterbotello/lesterbotello.github.io/tree/main/content"
+    Text = "Suggest Changes" # edit text
+    appendFilePath = true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+[menu]
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    weight = 10
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 20
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 30
+  # [[menu.main]]
+  #   name = "Categories"
+  #   url = "/categories"
+  #   weight = 40
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+[markup]
+  [markup.highlight]
+    # anchorLineNos = true
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    # noClasses = false
+    style = "monokai"
