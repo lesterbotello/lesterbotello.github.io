@@ -20,7 +20,7 @@ buildExpired = false
   author = "Lester Botello"
   # author: ["Me", "You"] # multiple authors
 
-  images = ["/assets/images/profile-1.jpg"]
+  images = ["/images/profile1.jpg"]
   DateFormat = "January 2, 2006"
   defaultTheme = "auto" # dark, light
   disableThemeToggle = false
@@ -44,22 +44,22 @@ buildExpired = false
   [params.assets]
     # disableHLJS = true # to disable highlight.js
     # disableFingerprinting = true
-    favicon = "/assets/images/favicon/favicon.ico"
-    favicon16x16 = "/assets/images/favicon/favicon-16x16.png"
-    favicon32x32 = "/assets/images/favicon/favicon-32x32.png"
-    apple_touch_icon = "/assets/images/favicon/apple-touch-icon.png"
+    favicon = "/images/favicon/favicon.ico"
+    favicon16x16 = "/images/favicon/favicon-16x16.png"
+    favicon32x32 = "/images/favicon/favicon-32x32.png"
+    apple_touch_icon = "/images/favicon/apple-touch-icon.png"
 
   [params.label]
-    text = "Home"
-    icon = "/apple-touch-icon.png"
+    text = "lesterbotello.dev"
+    icon = "/images/favicon/apple-touch-icon.png"
     iconHeight = 35
 
   # profile-mode
   [params.profileMode]
-    enabled = false # needs to be explicitly set
+    enabled = true # needs to be explicitly set
     title = "Lester Botello"
-    subtitle = "Software Engineer, .NET and AI enthusiast"
-    imageUrl = "/assets/images/profile-1.jpg"
+    subtitle = "I write (mostly .NET) code and tinker with AI stuff"
+    imageUrl = "/images/profile1.jpg"
     imageWidth = 120
     imageHeight = 120
     imageTitle = "my image"
