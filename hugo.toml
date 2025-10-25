@@ -8,6 +8,7 @@ enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
 buildExpired = false
+enableEmoji = true
 
 [minify]
   disableXML = true
@@ -65,7 +66,7 @@ buildExpired = false
     imageTitle = "my image"
     buttons = [
         { name = "Posts", url = "/posts" },
-        { name = "About", url = "/about" }
+        { name = "About", url = "https://lesterbotello.com/" }
     ]
 
   # home-info mode
