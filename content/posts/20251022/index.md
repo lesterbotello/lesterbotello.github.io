@@ -37,7 +37,7 @@ dotnet add package Microsoft.Extensions.Hosting
 
 ## Writing the tools.
 
-MCP servers work by exposing tools to AI agents. Each tool represents a distinct task that the MCP server is able to perform and it usually includes a description that provides context to consuming AI agents about its purpose. For this particular MCP server we want to provide a tool that's able to return the conversion rate between two given currencies. So let's start by provide a class that houses this tool.
+MCP servers work by exposing tools to AI agents. Each tool represents a distinct task that the MCP server is able to perform and it usually includes a description that provides context to consuming AI agents about its purpose. For this particular MCP server we want to provide a tool that's able to return the conversion rate between two given currencies. So let's start by providing a class that houses this tool.
 
 1. Open VS Code and open the directory where your new console project was created.
 2. Create a new directory in the root of the project and name it "Tools"
@@ -55,7 +55,7 @@ public class FixerIOTools
 }
 ```
 
-The `[McpServerToolType]` is important because it identifies the class as a set of tools that can be exposed by our MCP server. Now, we need to make our set of tools available to consumers. Let's continue with changing the defaut `Program.cs` file to build the foundation of our MCP server and expose our new tool. Open the `Program.cs` file and replace the default code with the following:
+The `[McpServerToolType]` attribute is important because it identifies the class as a set of tools that can be exposed by our MCP server. Now, we need to make our set of tools available to AI agents. Let's continue with changing the defaut `Program.cs` file to build the foundation of our MCP server and expose our new tool. Open the `Program.cs` file and replace the default code with the following:
 
 ```csharp
 using Microsoft.Extensions.DependencyInjection;
@@ -79,9 +79,9 @@ await builder.Build().RunAsync();
 
 ## Environment variables
 
-More often than not, your MCP server will require parameters that need to be provided by consumers. For example, your MCP server might need a personal access token to authenticate requests to a secure API. These can be provided via **environment variables**. Environment variables are perfect for MCP servers, because they're available globally in the program and can be reused where needed. In a C# MCP server, environment variables can be leveraged via the static `Environment` class.
+More often than not, your MCP server will require parameters that need to be provided by the user. For example, your MCP server might need a personal access token to authenticate requests to a secure API. These can be provided via **environment variables**. Environment variables are perfect for MCP servers, because they're available globally in the program and can be reused where needed. In a C# MCP server, environment variables can be leveraged via the static `Environment` class.
 
-In the case of our MCP server, an API key is required to perform requests to the Fixer.io API. We can modify our MCP server project to expect an environment variable and provide feedback to consumers if the variable is not present. To that end, add the following code to the bottom of the `Program.cs` file:
+In the case of our MCP server, an API key is required to perform requests to the Fixer.io API. We can modify our MCP server project to expect an environment variable and provide feedback to the user if the variable is not present. To that end, add the following code to the bottom of the `Program.cs` file:
 
 ```csharp
 string fixerIoKey = Environment.GetEnvironmentVariable("FIXER_IO_KEY");
@@ -167,7 +167,7 @@ public async Task<decimal> GetExchangeRateAsync(
 }
 ```
 
-As you can see, the method's logic is pretty straight-forward. We use the `FIXER_IO_KEY` environment variable to retrieve the Fixer.io API key and we use this to make a `GET` request to the Fixer.io API. We then process the API's response in JSON format and make the neccessary calculations to return the currency rate between the two currencies. Since the free version of Fixer.io only returns the currency rates using `EUR` as a base currency, we also provide cross-rate functionality to allow consumers convert between any two currencies.
+As you can see, the method's logic is pretty straight-forward. We use the `FIXER_IO_KEY` environment variable to retrieve the Fixer.io API key and we use this to make a `GET` request to the Fixer.io API. We then process the API's response in JSON format and make the neccessary calculations to return the currency rate between the two currencies. Since the free version of Fixer.io only returns the currency rates using `EUR` as a base currency, we also provide cross-rate functionality to allow AI agents convert between any two currencies.
 
 This is it. Really. We're done with the MCP server. But you also want to see it in action, don't you? 😏
 
