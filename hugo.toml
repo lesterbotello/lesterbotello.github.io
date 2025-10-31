@@ -21,7 +21,7 @@ enableEmoji = true
   author = "Lester Botello"
   # author: ["Me", "You"] # multiple authors
 
-  images = ["/images/profile1.jpg"]
+  images = ["/images/profile-new.png"]
   DateFormat = "January 2, 2006"
   defaultTheme = "auto" # dark, light
   disableThemeToggle = false
@@ -60,7 +60,7 @@ enableEmoji = true
     enabled = true # needs to be explicitly set
     title = "Lester Botello"
     subtitle = "I write (mostly .NET) code and tinker with AI stuff"
-    imageUrl = "/images/profile1.jpg"
+    imageUrl = "/images/profile-new.png"
     imageWidth = 120
     imageHeight = 120
     imageTitle = "my image"
