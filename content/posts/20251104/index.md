@@ -14,7 +14,7 @@ If you're using Visual Studio Code for development and are doing AI-assisted dev
 Prompt files themselves are nothing more than markdown files that follow a specific set of conventions:
 
 - They follow the format `name-of-prompt.prompt.md`
-- They use a YAML frontmatter header to specify things like its purpose, the prefered mode in which it will be used and which tools it'll require.
+- They use a YAML frontmatter header to specify things like its purpose, the preferred mode in which it will be used and which tools it'll require.
 
 ```yml
 ---
