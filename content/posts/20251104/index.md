@@ -37,7 +37,7 @@ You can find more about prompt files by looking at the [Visual Studio Code docum
 
 ## Prompt collaboration
 
-As you build your collection of prompts, you'll find that some of them are worth sharing with other members of your team. A great way to collaborate with prompt building is by pairing a centralized prompt repository with the [Promptitude VS Code Extension](https://marketplace.visualstudio.com/items?itemName=Logientnventive.promptitude-extension). Promptitude allows you to syncronize prompts and instructions from a set of known prompt repositories. You can create a repository for your team or organization and have everyone install Promptitude to share prompts between them.
+As you build your collection of prompts, you'll find that some of them are worth sharing with other members of your team. A great way to collaborate with prompt building is by pairing a centralized prompt repository with the [Promptitude VS Code Extension](https://marketplace.visualstudio.com/items?itemName=Logientnventive.promptitude-extension). Promptitude allows you to synchronize prompts and instructions from a set of known prompt repositories. You can create a repository for your team or organization and have everyone install Promptitude to share prompts between them.
 
 **Note:** Promptitude is currently in alpha phase, which means frequent changes to the functionality of the extension should be expected.
 
