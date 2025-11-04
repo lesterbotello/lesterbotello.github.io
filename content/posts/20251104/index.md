@@ -31,7 +31,7 @@ Apart from the header, the contents of prompt files should usually follow the sa
 
 Also, keep in mind that if your project is using an instructions file, these will be included in the conversation (see my [previous article](../20250817/) about AI agent instructions). Make sure the prompt takes into consideration any instructions provided via instructions files, to avoid providing conflicting information that could end up confusing the agent.
 
-You can also customize your prompt is by using input variables to request additional information for your prompt via the chat input field.
+You can also customize your prompt by using input variables to request additional information for your prompt via the chat input field.
 
 You can find more about prompt files by looking at the [Visual Studio Code documentation](https://code.visualstudio.com/docs/copilot/customization/prompt-files).
 
