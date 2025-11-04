@@ -56,7 +56,7 @@ Here's how to get started with Promptitude:
 
 6. Click on "Add Item" and type in the URL of the repository you took note of in step 3.
 
-7. Finally, click on the "✔️ Prompts" indicator at the bottom right to initiate the sync. Restarting VS Code should also do the trick. If everything went well, you should have new prompts to sync
+7. Finally, click on the "✔️ Prompts" indicator at the bottom right to initiate the sync. Restarting VS Code should also do the trick. If everything went well, you should have new prompts to sync.
 
 8. To test your prompts, you can press `/` within the Github Copilot chat window and start typing the name of one prompt. You'll notice they will be suggested to you.
 
