@@ -16,7 +16,7 @@ The Uno Platform team has come up with a number of tools that aim to leverage th
   - **App MCP**: Gives AI agents control over the app surface to allow interactions with the app's actual UI and further extend the functionality already available as part of Hot Design. IDE-integrated AI agents such as VS Code and Visual Studio, as well as CLI-based agents (Claude Code, Gemini CLI, etc.), are supported.
   - **Agentic MCP Server**: Extends the knowledge base of AI agents to create apps using the latest Uno Platform improvements available and provide a better understanding to resolve potential issues.
 
-[In my previous article](https://www.google.com/search?q=../20251104/), I covered MCP servers and I talked about how easy it is to create your own MCP server in C\#. MCP servers are a great way to extend the abilities of your AI agent by giving them access to functionality not necessarily available as part of the training data of whatever model they're powered by. You can easily tap into Uno Platform's agentic MCP server to make your AI agent:
+[In my previous article](../20251104/), I covered MCP servers and I talked about how easy it is to create your own MCP server in C\#. MCP servers are a great way to extend the abilities of your AI agent by giving them access to functionality not necessarily available as part of the training data of whatever model they're powered by. You can easily tap into Uno Platform's agentic MCP server to make your AI agent:
 
   - Verify your system to make sure it's ready to develop Uno Platform applications.
   - Create new apps or add features to existing apps by deciding which features are more convenient.
