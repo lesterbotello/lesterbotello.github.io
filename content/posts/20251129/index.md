@@ -44,7 +44,7 @@ This will create (or update if it exists) a file called `mcp.json` in the `.vsco
 ```json
 {
   "servers": {
-    "uno": {
+    "uno-app": {
       "url": "https://mcp.platform.uno/v1"
     }
   }
@@ -66,7 +66,7 @@ Alternatively, you can manually create or edit the `.mcp.json` file in the direc
 ```json
 {
   "mcpServers": {
-    "api-server": {
+    "uno": {
       "type": "http",
       "url": "https://mcp.platform.uno/v1"
     }
