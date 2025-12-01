@@ -44,7 +44,7 @@ This will create (or update if it exists) a file called `mcp.json` in the `.vsco
 ```json
 {
   "servers": {
-    "uno-app": {
+    "uno": {
       "url": "https://mcp.platform.uno/v1"
     }
   }
@@ -103,7 +103,7 @@ Setting up the Uno Platform's App MCP Server is also implemented as an HTTP MCP 
 ```json
 {
   "servers": {
-    "uno": {
+    "uno-app": {
       "url": "http://localhost:65392/mcp"
     }
   }
