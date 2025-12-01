@@ -1,5 +1,5 @@
 ---
-title: Seting up the new Uno Platform's MCP Servers
+title: Setting up the new Uno Platform's MCP Servers
 date: 2025-11-29T22:00:00-05:00
 draft: false
 ---
